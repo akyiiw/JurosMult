@@ -6,11 +6,11 @@
   <title>MultJuros</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/assets/jurosmults.png" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
 </head>
 <body>
   <header>
-    <div class="navbar">
+    <div id="navbar" class="navbar">
       <a href="#">
         <img src="/assets/jurosmults.png" alt="JurosMult Logo" class="logo" />
       </a>
@@ -25,12 +25,13 @@
 
   <main>
     <h1 id="welcome">Bem-vindo ao <span id="j">Juros</span><span id="m">Mult</span></h1> 
-    <p>Calculando seu Mult desde 2025.</p>
+    <p id="slogan">Calculando seu <span>Mult</span> desde 2025.</p>
   </main>
 
-  <section class="lol">
-    <h1>Funcionalidades</h1>
-        <div id="aa">
+  <section id="one">
+    <div class="blind">
+    <h1 id="func">Funcionalidades</h1>
+        <div id="calculadora-container">
         <section id="calculadora">
           <br>
           <p class="ps" id="para">Calcule o capital em juros compostos!</p>
@@ -41,24 +42,36 @@
         </section>
         <img src="/assets/bula.gif" alt="mult" class="mult" />
         </div>
+    </div>
   </section>
 
-  <section class="lol" id="two">
+  <section id="two">
+    <div class="blind">
     <h1 id="abt">Sobre</h1>
     <br>
     <p class="ps blob">A MultJuros é uma empresa dedicada a simplificar o entendimento e o cálculo de juros compostos. Nosso compromisso é fornecer soluções acessíveis e precisas para ajudar pessoas e empresas a planejarem melhor seus investimentos e finanças. Conte com a MultJuros para tomar decisões financeiras mais informadas!</p>
+    <div class="pictures-container">
+      <div class="member-div"><a href="https://github.com/" target="_blank"><img src="/assets/photos/pictureangelo.jpg" alt="Member picture" class="member"/></a><p>Angelo</p></div>
+      <div class="member-div"><a href="https://github.com/" target="_blank"><img src="/assets/photos/pictureartur.jpg" alt="Member picture" class="member"/></a><p>Artur</p></div>
+      <div class="member-div"><a href="https://github.com/" target="_blank"><img src="/assets/photos/picturediogo.jpg" alt="Member picture" class="member"/></a><p>Diogo</p></div>
+      <div class="member-div"><a href="https://github.com/" target="_blank"><img src="/assets/photos/picturejonatas.jpg" alt="Member picture" class="member"/></a><p>Jônatas</p></div>
+      <div class="member-div"><a href="https://github.com/" target="_blank"><img src="/assets/photos/picturenyls.jpeg" alt="Member picture" class="member"/></a><p>Nyls</p></div>
+      <div class="member-div"><a href="https://github.com/akyiiw" target="_blank"><img src="/assets/photos/picturepietro.jpg" alt="Member picture" class="member"/></a><p>Pietro</p></div>
+    </div>
   </section>
 
-  <section class="lol" id="three">
-    <h1 id="abt">Contato</h1>
+  <section id="three">
+    <div class="blind">
+    <h1 id="cont">Contato</h1>
     <br>
     <p class="ps blob">
-    Para entrar em contato conosco, envie um e-mail para <a href="mailto:contato@multjuros.com">contato@multjuros.com</a>.
+    Para entrar em contato conosco, envie um e-mail para <a id="email" href="mailto:contato@multjuros.com">contato@multjuros.com</a>.
     </p>
+    </div>
   </section>
 
   <footer>
-    <p class="footers">&copy; 2025 MultJuros. Todos os direitos reservados.<br><br>(11)99999-0000</a></p>
+    <p class="footers">&copy; 2025 MultJuros. Todos os direitos reservados.<br>(11) 99999-0000 - Código-fonte disponível <a id="repo" href="https://github.com/akyiiw/JurosMult" target="_blank">aqui</a></p><br><p>Inspirado por <a href="https://balatrogame.fandom.com/wiki/Balatro_Wiki" target="_blank">Balatro</a></p>
   </footer>
   <script src="script.js"></script>
 </body>
