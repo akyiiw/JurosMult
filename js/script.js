@@ -23,7 +23,6 @@ document.getElementById('calc').addEventListener('click', function() {
 });
 
 function showDialog(message, message2, message3) {
-    // Cria o fundo escuro
     const overlay = document.createElement('div');
     overlay.style.position = 'fixed';
     overlay.style.top = 0;
@@ -35,8 +34,6 @@ function showDialog(message, message2, message3) {
     overlay.style.alignItems = 'center';
     overlay.style.justifyContent = 'center';
 
-
-    // Cria a caixa de diálogo
     const dialog = document.createElement('div');
     dialog.style.background = '#fff';
     dialog.style.padding = '24px 32px';
