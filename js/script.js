@@ -164,7 +164,7 @@ function showDialog(message, message2, message3) {
   
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.navs').forEach(function(link, idx) {
-      const sectionIds = ['navbar', 'func', 'abt', 'cont'];
+      const sectionIds = ['inicio', 'one', 'two', 'three'];
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = sectionIds[idx];
@@ -175,9 +175,3 @@ function showDialog(message, message2, message3) {
       });
     });
   });
-
-  
-
-
-
-
