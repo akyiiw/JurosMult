@@ -1,10 +1,10 @@
 let valor = document.getElementById("valor");
 let resultado = document.getElementById("resultado");       
-let calcular = document.getElementById("calcular");
+let calcular = document.getElementById("calc");
 let tempo = document.getElementById("tempo");
 let taxa = document.getElementById("taxa");
 
-document.getElementById('calcular').addEventListener('click', function() {
+document.getElementById('calc').addEventListener('click', function() {
     const valor = parseFloat(document.getElementById('valor').value);
     const taxa = parseFloat(document.getElementById('taxa').value) / 100;
     const tempo = parseInt(document.getElementById('tempo').value, 10);

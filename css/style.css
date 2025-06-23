@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-header img {
+header.logo {
   height: 60px;
   width: auto;
   vertical-align: middle;
@@ -24,7 +24,6 @@ header img {
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-image: url('/assets/balatrobg.gif');
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,8 +31,7 @@ body {
 }
 
 header {
-  background-color: #182325; /* verde escuro */
-  color: white;
+  background-color: #182325;
   width: 100%;
   position: fixed;
   top: 0;
@@ -47,6 +45,7 @@ h1 {
   font-family: 'm6x11plus';
   font-size: 50px;
   font-weight: 200;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .navbar {
@@ -79,10 +78,6 @@ h1 {
   -webkit-text-stroke: 1px #000000;
 }
 
-h1, #j, #m, .blob, .ps, .navs, #para, .member-div p, slogan {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
 .member-div p {
   font-family: 'm6x11plus', sans-serif;
   font-weight: 200;
@@ -112,7 +107,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.blind {
+.blind-container {
   color: white;
   padding: 32px;
   max-width: 100%;
@@ -130,7 +125,7 @@ img {
   align-items: center;
 }
 
-.calc {
+.form {
   display: block;
   width: 50%;
   padding: 10px;
@@ -146,7 +141,7 @@ input::placeholder {
   color: rgb(175, 175, 175);
 }
 
-#calcular,  button {
+#calc,  button {
   background-color: #d28501;
   color: rgb(0, 0, 0);
   border: 2px solid #855401;
@@ -157,18 +152,14 @@ input::placeholder {
   transition: background-color 0.3s, color 0.3s;
 }
 
-#calcular:hover, button:hover {
+#calc:hover, button:hover {
   background-color: #a46d0f;
   color: rgb(255, 255, 255);
 }
 
-.blob {
+.info {
   font-family: 'Poppins', sans-serif;
-}
-
-.ps {
   font-size: 18px;
-  max-width: 100%;
 }
 
 .navs {
@@ -176,8 +167,11 @@ input::placeholder {
   font-size: 25px;
 }
 
-#para {
+#label {
   font-size: 25px;
+  font-family: 'm6x11plus', sans-serif;
+  font-weight: 200;
+  margin-top: 10px;
 }
 
 footer {
@@ -197,7 +191,7 @@ footer {
   max-height: 100%;
 }
 
-.footers {
+.footer {
   display: block;
   text-align: center;
 }
@@ -217,12 +211,6 @@ img {
 
 #calculadora {
   width: 1200px;
-}
-
-#para {
-  font-family: 'm6x11plus', sans-serif;
-  font-weight: 200;
-  margin-top: 10px;
 }
 
 #one, #two, #three {
